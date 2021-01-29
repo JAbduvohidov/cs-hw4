@@ -24,9 +24,7 @@ namespace homework4
 
             // 2
             var book = new Book("404", "John Doe", "Not Found");
-            book.Title.Show(ConsoleColor.Red);
-            book.Author.Show(ConsoleColor.Yellow);
-            book.Content.Show(ConsoleColor.Green);
+            book.Show();
 
             Console.WriteLine(divider);
 

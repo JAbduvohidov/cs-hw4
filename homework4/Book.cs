@@ -14,6 +14,13 @@ namespace homework4
             Author = new Author(author);
             Content = new Content(content);
         }
+
+        public void Show()
+        {
+            Title.Show(ConsoleColor.Red);
+            Author.Show(ConsoleColor.Yellow);
+            Content.Show(ConsoleColor.Green);
+        }
     }
 
     public class Title
@@ -51,7 +58,7 @@ namespace homework4
             Console.ForegroundColor = currentColor;
         }
     }
-    
+
     public class Content
     {
         private readonly string _value;
